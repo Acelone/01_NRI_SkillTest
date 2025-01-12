@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Packages</RootNamespace>
-    <ProjectGuid>{42A458E1-2552-B35C-3D0D-B3B2206D1302}</ProjectGuid>
+    <ProjectGuid>{A6E66529-CF7A-4D48-2501-A981663E7811}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.Rider.Editor</AssemblyName>
@@ -767,11 +767,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{C5FCCCBB-A4EB-64F2-6413-DF6780472C66}</Project>
+      <Project>{09E85FCA-C9E1-7239-E352-392B82805E2A}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{959136BA-820B-6FAD-4B3F-DD707D74611A}</Project>
+      <Project>{4921CD65-4FB9-4A88-755F-F6D3EAC626EB}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

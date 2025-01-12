@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5F48551C-7658-3808-FEE4-A0D700298050}</ProjectGuid>
+    <ProjectGuid>{0F6FABB9-61FD-52B8-1A6A-D32CA47939CB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.EditorCoroutines.Editor</AssemblyName>
@@ -755,11 +755,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
-      <Project>{C5FCCCBB-A4EB-64F2-6413-DF6780472C66}</Project>
+      <Project>{09E85FCA-C9E1-7239-E352-392B82805E2A}</Project>
       <Name>UnityEditor.TestRunner</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{959136BA-820B-6FAD-4B3F-DD707D74611A}</Project>
+      <Project>{4921CD65-4FB9-4A88-755F-F6D3EAC626EB}</Project>
       <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>

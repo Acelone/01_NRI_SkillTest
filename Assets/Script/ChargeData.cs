@@ -64,6 +64,10 @@ public class ChargeData : MonoBehaviour
     }
     private IEnumerator UpdateNameRoutine(int i) 
     {
+        if (LeanTween.isTweening(chargeSkillName.gameObject))
+        {
+            LeanTween.cancel(chargeSkillName.gameObject);
+        }
         float target = -800f;
         if (prevUseCharge < i)
             target = -target;

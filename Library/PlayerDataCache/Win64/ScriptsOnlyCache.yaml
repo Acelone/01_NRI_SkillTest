@@ -239,6 +239,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: CharacterAction
     methodName: CharacterTurn
+  - assembly: Assembly-CSharp
+    fullTypeName: EndGameConfig
+    methodName: Home
   sceneClasses:
     Assets/Scenes/MainGame.unity:
     - Class: 1
@@ -993,7 +996,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 1bc1d70e3d801867dafa725eadfe2085
+      Hash: a73703ff5e8aa058bfdbd01b96143790
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: NotificationSystem

@@ -12,6 +12,9 @@ public class NotificationSystem : MonoBehaviour
     [Header("Notification Settings")]
     [SerializeField] private float offScreenPositionX = 3000f;
 
+    [TextArea(3,5)]
+    public string notificationLog;
+
     private void Awake()
     {
         // Singleton pattern implementation
@@ -28,12 +31,16 @@ public class NotificationSystem : MonoBehaviour
     public void ShowNotification(string text, float duration)
     {
         if (notificationText == null) return;
-
-        notificationText.text = text;
-        StartCoroutine(HandleNotification(duration));
+        notificationLog += text + "\n";
+        StartCoroutine(HandleNotification(text,duration));
     }
-    private IEnumerator HandleNotification(float duration)
+    private IEnumerator HandleNotification(string text, float duration)
     {
+        while (LeanTween.isTweening(this.gameObject)) 
+        {
+            yield return null;
+        }
+        notificationText.text = text;
         float halfDuration = duration / 2f;
 
         // Slide in

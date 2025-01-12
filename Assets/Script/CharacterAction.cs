@@ -250,6 +250,7 @@ public class CharacterAction : MonoBehaviour
     {
         UseCharge(1);
         ApplyModifier(ModifierContainer.instance.attackBuff, 15);
+        Invoke(nameof(UpdateTurn), 2);
     }
 
     public void DefenseUp()
@@ -257,6 +258,7 @@ public class CharacterAction : MonoBehaviour
         Notification("Defending...");
         UseCharge(1);
         ApplyModifier(ModifierContainer.instance.defenseBuff);
+        Invoke(nameof(UpdateTurn), 2);
     }
 
     public void Heal()
@@ -315,6 +317,5 @@ public class CharacterAction : MonoBehaviour
         characterModifiers.Add(newModifier);
         attack += newModifier.attack;
         defense += newModifier.defense;
-        UpdateTurn();
     }
 }
